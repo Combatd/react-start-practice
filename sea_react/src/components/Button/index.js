@@ -1,11 +1,13 @@
 import React from 'react';
 import './style.css'
 
-function Button() {
+function Button(props) {
+    console.log(props);
+    const { children, color } = props;
     return (
         <React.Fragment>
-            <button>
-                I am a Button
+            <button className={`btn ${color}`}>
+                {children}
             </button>
         </React.Fragment>
     )
