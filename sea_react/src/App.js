@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Button from './components/Button';
+
 function App() {
   // Whatever you pass useState() is the initial State
   const [count, setCounter] = useState(0);
