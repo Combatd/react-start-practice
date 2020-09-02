@@ -21,8 +21,8 @@ function App() {
     <div className="App">
       <div>COUNTER</div>
       <div className={ (count < 0) ? 'red' : ''}>{count}</div>
-      <Button color='pink'>+</Button>
-      <Button color='green'>-</Button>
+      <Button color='pink' onBtnClick={addToCount}>+</Button>
+      <Button color='green' onBtnClick={subtractFromCount}>-</Button>
     </div>
   );
 }
