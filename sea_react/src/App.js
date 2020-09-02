@@ -18,7 +18,7 @@ function App() {
     // JSX
     <div className="App">
       <div>COUNTER</div>
-      <div>{count}</div>
+      <div className={ (count < 0) ? 'red' : ''}>{count}</div>
       <button onClick={ addToCount }>+</button>
       <button onClick={ subtractFromCount }>-</button>
     </div>
