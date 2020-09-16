@@ -1,12 +1,17 @@
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 function Signup() {
+    const router = useRouter();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const doSubmitForm = (e) => {
         e.preventDefault();
+        // auth
         console.log(email, password)
+        // and then we want to send them to the home page
+        router.push('/')
     }
 
 
